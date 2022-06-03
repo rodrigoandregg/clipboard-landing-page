@@ -2,10 +2,14 @@
 
 :root {
     /* fonts */
-    font-family: 'Bai Jamjuree', sans-serif;
+    --font1: 'Bai Jamjuree', sans-serif;
     /* colors */
     --cta1: hsl(171, 66%, 44%);
+    --cta1shadow: hsl(171, 66%, 30%);
+    --cta1active: hsl(171, 66%, 50%);
     --cta2: hsl(233, 100%, 69%);
+    --cta2shadow: hsl(233, 48%, 46%);
+    --cta2active: hsl(233, 100%, 79%);
     --headings: hsl(210, 10%, 33%);
     --paragraphs: hsl(201, 11%, 66%);
     --mainbg: hsl(0, 0%, 100%);
@@ -20,6 +24,8 @@
 body {
     background: url(../images/bg-header-mobile.png) no-repeat center top ,var(--mainbg);
     background-size: cover;
+    font-family: var(--font1);
+    font-size: 18px;
 }
 
 
