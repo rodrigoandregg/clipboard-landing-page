@@ -13,6 +13,7 @@
     --headings: hsl(210, 10%, 33%);
     --paragraphs: hsl(201, 11%, 66%);
     --mainbg: hsl(0, 0%, 100%);
+    --footerbg: hsl(0, 0%, 98%);
 }
 
 * {
@@ -23,19 +24,175 @@
 
 body {
     background: url(../images/bg-header-mobile.png) no-repeat center top ,var(--mainbg);
-    background-size: cover;
+    background-size: contain;
     font-family: var(--font1);
     font-size: 18px;
 }
 
+img {
+    width: 100%;
+    object-fit: cover;
+}
 
+h3 {
+    color: var(--headings);
+}
 
+p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: var(--paragraphs);
+}
 
+.container {
+    margin: 0 auto;
+    margin-top: 130px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 82%;
+    max-width: 500px;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.hero__info__title {
+    font-size: 1.8rem;
+    color: var(--headings);
+}
+
+.info__title {
+    font-size: 1.6rem;
+    color: var(--headings);
+}
+
+.download {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.download__cta {
+    color: var(--mainbg);
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 600;
+    width: 100%;
+    padding: 15px 75px;
+    border-radius: 30px;
+}
+
+.download__cta--ios {
+    background-color: var(--cta1);
+    box-shadow: 0 2px 0 var(--cta1shadow);
+}
+
+.download__cta--ios:hover {
+    background-color: var(--cta1active);
+}
+
+.download__cta--mac {
+    background-color: var(--cta2);
+    box-shadow: 0 2px 0 var(--cta2shadow);
+}
+
+.download__cta--mac:hover {
+    background-color: var(--cta2active);
+}
+
+/* main */
+
+.main {
+    gap: 0;
+}
+
+.section {
+    margin-top: 150px;
+}
+
+.track {
+    margin-top: 0;
+}
+
+.info {
+    gap: 15px;
+}
+
+.snippets__services {
+    gap: 40px;
+}
+
+.services__service {
+    gap: 10px;
+}
+
+.workflow {
+    margin-top: 80px;
+    gap: 80px;
+}
+
+.workflow__options {
+    gap: 50px;
+}
+
+.options__option {
+    gap: 20px;
+}
+
+.option__picture {
+    display: flex;
+    align-items: center;
+    align-self: center;
+    width: 35px;
+    height: 35px;
+}
+
+.options__option:nth-child(3) .option__picture {
+    width: 50px;
+    height: 50px;
+
+}
+
+.trades {
+    margin-top: 130px;
+}
+
+.trades__logo {
+    width: 130px;
+}
 
 /* footer */
 
+.footer {
+    background-color: var(--footerbg);
+    padding-top: 50px;
+    width: 100%;
+}
+
+.footer__icon {
+    width: 55px;
+}
+
+.footer__links {
+    gap: 20px;
+}
+
+.links__link {
+    color: var(--headings);
+    text-decoration: none;
+}
+
+.footer__social {
+    flex-direction: row;
+    gap: 40px;
+}
+
 .attribution {
-    font-size: 11px;
+    font-size: .6rem;
     text-align: center;
 }
 
