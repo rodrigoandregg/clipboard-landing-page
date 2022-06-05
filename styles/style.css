@@ -112,6 +112,7 @@ p {
 
 .section {
     margin-top: 150px;
+    align-items: center;
 }
 
 .track {
@@ -169,6 +170,9 @@ p {
 
 .footer {
     background-color: var(--footerbg);
+}
+
+.real__footer {
     padding-top: 50px;
     width: 100%;
 }
@@ -198,4 +202,92 @@ p {
 
 .attribution a {
     color: hsl(228, 45%, 44%);
+}
+
+@media (min-width:1024px) {
+
+    p {
+        font-size: .8rem;
+    }
+
+    .section {
+        margin-top: 100px;
+    }
+
+    .container {
+        width: 100%;
+        max-width: unset;
+    }
+
+    .flex {
+        justify-content: center;
+    }
+
+    .hero .info {
+        width: 550px;
+    }
+
+    .download {
+        justify-content: center;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .download__cta {
+        width: 200px;
+        padding: 10px 0;
+    }
+
+    .info {
+        align-self: center;
+        width: 620px;
+    }
+
+    .track__snippets {
+        justify-content: space-around;
+        flex-direction: row;
+        width: 95%;
+        gap: 0;
+    }
+
+    .snippets__picture {
+        margin-left: -12%;
+        width: 60%;
+    }
+
+    .snippets__services {
+        text-align: start;
+        width: 270px;
+    }
+
+    .access__picture {
+        width: 80%;
+    }
+
+    .workflow {
+        width: 80%;
+    }
+
+    .workflow__options {
+        flex-direction: row;
+    }
+
+    .trades {
+        flex-direction: row;
+        width: 95%;
+    }
+
+    .real__footer {
+        max-width: unset;
+        flex-direction: row;
+        justify-content: space-around;
+        padding-bottom: 50px;
+    }
+
+    .footer__links {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        text-align: start;
+    }
+
 }
